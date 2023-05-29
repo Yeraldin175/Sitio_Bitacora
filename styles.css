@@ -1,0 +1,191 @@
+/* Aqui se estaran haciendo las modificaciones a los titulos que correspondan a "h1"*/
+h1 {
+    font-size: 65px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 65 píxeles de altura */
+    text-align: center; /* Esto ayuda a que el texto este alineado al centro*/
+    color: rgb(14, 3, 24); /* Es para el color de la letra, el rgb es una combinación de colores para crear otro tono*/
+    margin:0; /* Es el espacio entre su contenido y el borde.*/
+    text-shadow: 4px 4px 2px rgb(186, 122, 247) /* Esto sirve para darle un tipo de efecto de sombreado al texto*/
+}
+
+/* Aqui se estaran haciendo las modificaciones a los subtitulos que correspondan a "h2"*/
+h2 {
+    color: blue; /* Es para el color del texto*/
+    font-size: 30px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 30 píxeles de altura */
+    text-shadow: 1px 1px 2px blueviolet /* Esto sirve para darle un tipo de efecto de sombreado al texto*/
+  }
+  
+/* Aqui se estaran haciendo las modificaciones a los subtitulos que correspondan a "h3"*/
+h3 {
+    text-align: justify; /* Sirve para alinear el texto igualando la longitud de todas las líneas del texto. */
+    color: blue; /* Es para el color del texto*/
+    font-size: 30px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 30 píxeles de altura */
+    text-shadow: 2px 2px 2px blueviolet /* Esto sirve para darle un tipo de efecto de sombreado al texto*/
+  }
+
+/* Aqui se estaran haciendo las modificaciones a todos los parrafos */
+p {
+    font-size: 25px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 25 píxeles de altura */
+    font-style: Arial; /* Sirve para el tipo de letra */
+    text-align: justify; /* Sirve para alinear el texto igualando la longitud de todas las líneas del texto.*/
+    text-indent: 4px; /* Establece la tabulación o indentación de la primera línea de texto */
+    letter-spacing: normal; /*Esto es para el espacio que tendran las palabras y no esten tan juntas ni tan separadas */  
+ }
+
+ /* Aqui se hacen todas la modificaciones de la pagina */ 
+html {
+    background-color: white; /* Se define el color de fondo que tendra la pagina */
+}
+
+
+
+/* Diseño de la tabla con el contenido de la página */
+.tabla {
+  background:#f9f9f9; /*Fondo blanco */
+  border: 2px solid black; /*borde de la tabla color negra */
+  display: table; /*se organiza el contenido en formato de una tabla*/
+  font-size: 95%; /*Tamaño de la letra*/
+  margin-bottom: 1em; /*Mover hacia abajo*/
+  padding: 20px; /*espacio y tamaño de la letra */
+  width: 300px; /*Ancho de la tabla*/
+  height: 150px; /* ALtura de la tabla*/
+  position: relative; /*posicion para mover el contenido*/
+  top: 0%; /* Altura y mover hacia arriba toda la tabla*/
+  left: 40%; /* Mover hacia la izquierda toda la tabla*/ 
+  margin: -25px 0 0 -25px; /* Centrar*/ 
+  
+}
+.contenido {
+  text-align:start
+
+}
+/* Es para el titulo que llevara la tabla */
+.tabla .titulo {
+  text-align:center; /* Sirve para alinear el texto al centro*/
+}
+
+.tabla li, .tabla ul, .tabla ul li {
+  padding: 0 5px;
+  list-style: none; 
+}
+
+.cabecera-izq{
+    color: black;  
+    border: 2px solid black;
+    font-style: italic;
+   }
+
+
+/* HACER DISEÑO EN EL CUERPO DEL HTML*/
+body {
+  font-family: 'open sans'; /* Tipo de letra */
+  font-weight: normal; /* especifica el grueso de la letra */
+  font-size: 100%; /* especifica la dimensión de la letra*/
+  color: #1b262c; /* Color de la letra */
+  display: flex; /*  nos permite maquetar */
+  
+  background-color: #f7f4f4; /* Fondo blanco */
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box; /* es para quitar los espacios que tenga en los bordes */
+}
+
+.contenedor{
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titulo{
+  color: #642a73;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+/* HEADER */
+header{
+  width: 100%;
+  height: 600px;
+  background: #bc4e9c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.671), hsl(317, 45%, 52%)), url(imagenes/compus.jpg);
+  background: linear-gradient(to right, hsla(340, 95%, 50%, 0.671), hsl(317, 45%, 52%)), url(imagenes/compus.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+nav{
+  text-align: right;
+  padding: 30px 50px 0 0;
+}
+
+nav > a{
+  color: #fff;
+  font-weight: 300; /* letra más ligera */
+  text-decoration: none; /* Quita el subrayado de abajo */
+  margin-right: 10px; /* Separación uno del otro */
+}
+
+nav > a:hover{ 
+  text-decoration: underline; /* pone el subrayado de abajo */
+}
+
+.textos-header{
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.textos-header h1{
+  font-size: 50px;
+  color: #fff;
+}
+
+.textos-header h2{
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.hola{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* BOTÓN INICIO */
+
+.boton{
+  width: 65px;
+  height:32px;
+  background-color:#171f17;
+  margin: 3px;
+  padding:10px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  font-size:15px;
+  line-height:12px;
+  text-transform: uppercase;
+  float:left;
+}
+
+.boton:hover{
+  opacity: 0.50;
+  -moz-opacity: .50;
+  filter:alpha (opacity=50);
+}
+.boton a{
+  color:#fff;
+  text-decoration:none;
+  padding:5px 5px 5px 0;
+}
